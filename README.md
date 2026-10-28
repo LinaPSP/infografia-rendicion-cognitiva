@@ -15,8 +15,6 @@ https://linapsp.github.io/infografia-rendicion-cognitiva/
 - `app.js` — lógica de interacción
 - `assets/` — ficheros woff2 y licencia OFL de Newsreader
 
-Las vistas previas (`preview-*.png`) muestran el concepto, el flujo y la página completa.
-
 Todo se despliega directamente en GitHub Pages desde `main` (raíz del repositorio).
 
 ## Justificación
