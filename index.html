@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rendición cognitiva · Chatbots en la universidad</title>
+<meta name="description" content="Infografía interactiva: cómo funcionan los chatbots generativos, qué es la rendición cognitiva que describe el informe del MIT (agosto de 2026), sus sesgos, su opacidad y por qué el criterio propio es el principal factor de protección.">
+<meta name="author" content="Lina Paola Solórzano Prieto">
+<meta name="theme-color" content="#14130f">
+<meta property="og:title" content="¿La respuesta correcta es aprender?">
+<meta property="og:description" content="La rendición cognitiva frente a los chatbots generativos en la universidad.">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%2314130f'/%3E%3Cpath d='M7 22 L25 9' stroke='%23ee8a62' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="topbar" id="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"></span>Rendición cognitiva</a>
+    <p class="now" aria-hidden="true"><span class="now-n" id="now-n">00</span> <span class="now-t" id="now-t">Inicio</span></p>
+    <nav class="nav" aria-label="Capítulos">
+      <ol>
+        <li><a href="#funcionamiento"><span>01</span>Funcionamiento</a></li>
+        <li><a href="#concepto"><span>02</span>Concepto</a></li>
+        <li><a href="#duda"><span>03</span>La duda</a></li>
+        <li><a href="#evidencia"><span>04</span>Evidencia</a></li>
+        <li><a href="#sesgos"><span>05</span>Sesgos</a></li>
+        <li><a href="#opacidad"><span>06</span>Opacidad</a></li>
+        <li><a href="#etica"><span>07</span>Ética</a></li>
+        <li><a href="#criterio"><span>08</span>Criterio</a></li>
+      </ol>
+    </nav>
+  </div>
+  <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+</header>
+
+<main id="main">
+
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<section class="hero theme-night" id="top" aria-labelledby="hero-title">
+  <div class="grid">
+    <div class="hero-copy">
+      <p class="kicker">Infografía interactiva · Ética e innovación en la era digital</p>
+      <h1 id="hero-title">¿La respuesta <em>correcta</em> es&nbsp;aprender?</h1>
+      <p class="dek">Los chatbots generativos explican un tema a cualquier hora, resuelven ejercicios paso a paso y redactan borradores en segundos. El comité del MIT advierte que obtener la respuesta correcta puede crear la <strong>ilusión de aprendizaje</strong> y desencadenar una <strong class="t-rust">rendición cognitiva</strong>: recurrir a la IA al primer indicio de dificultad.</p>
+      <p class="byline">
+        <span>Lina Paola Solórzano Prieto</span>
+        <span>Universidad de Bogotá Jorge Tadeo Lozano</span>
+        <span>Fuente central: informe del MIT, agosto de 2026</span>
+      </p>
+    </div>
+
+    <figure class="hero-fig">
+      <svg class="routes routes-h is-drawing" viewBox="0 0 1000 300" role="img" aria-labelledby="routes-h-t routes-h-d">
+        <title id="routes-h-t">Dos caminos desde la misma duda</title>
+        <desc id="routes-h-d">Desde la duda salen dos trayectos. La rendición cognitiva es una línea recta y corta que llega de inmediato a una respuesta correcta, con ilusión de aprendizaje. El esfuerzo productivo es una línea con muchos bucles de prueba y error que tarda más y llega al razonamiento analítico, condición del aprendizaje duradero.</desc>
+        <path class="r-rust" pathLength="1" d="M60 160 L760 64"/>
+        <path class="r-teal" pathLength="1" d="M60 160 C 84 160 86 262 116 262 L124.3 261.5 L132.5 260.2 L140.3 258.0 L147.7 255.0 L154.5 251.3 L160.6 247.0 L166.0 242.3 L170.4 237.2 L174.0 232.0 L176.7 226.8 L178.4 221.7 L179.3 217.0 L179.4 212.7 L178.8 209.0 L177.7 206.0 L176.0 203.8 L174.1 202.5 L172.0 202.0 L169.9 202.5 L168.0 203.8 L166.3 206.0 L165.2 209.0 L164.6 212.7 L164.7 217.0 L165.6 221.7 L167.3 226.8 L170.0 232.0 L173.6 237.2 L178.0 242.3 L183.4 247.0 L189.5 251.3 L196.3 255.0 L203.7 258.0 L211.5 260.2 L219.7 261.5 L228.0 262.0 L236.3 261.5 L244.5 260.2 L252.3 258.0 L259.7 255.0 L266.5 251.3 L272.6 247.0 L278.0 242.3 L282.4 237.2 L286.0 232.0 L288.7 226.8 L290.4 221.7 L291.3 217.0 L291.4 212.7 L290.8 209.0 L289.7 206.0 L288.0 203.8 L286.1 202.5 L284.0 202.0 L281.9 202.5 L280.0 203.8 L278.3 206.0 L277.2 209.0 L276.6 212.7 L276.7 217.0 L277.6 221.7 L279.3 226.8 L282.0 232.0 L285.6 237.2 L290.0 242.3 L295.4 247.0 L301.5 251.3 L308.3 255.0 L315.7 258.0 L323.5 260.2 L331.7 261.5 L340.0 262.0 L348.3 261.5 L356.5 260.2 L364.3 258.0 L371.7 255.0 L378.5 251.3 L384.6 247.0 L390.0 242.3 L394.4 237.2 L398.0 232.0 L400.7 226.8 L402.4 221.7 L403.3 217.0 L403.4 212.7 L402.8 209.0 L401.7 206.0 L400.0 203.8 L398.1 202.5 L396.0 202.0 L393.9 202.5 L392.0 203.8 L390.3 206.0 L389.2 209.0 L388.6 212.7 L388.7 217.0 L389.6 221.7 L391.3 226.8 L394.0 232.0 L397.6 237.2 L402.0 242.3 L407.4 247.0 L413.5 251.3 L420.3 255.0 L427.7 258.0 L435.5 260.2 L443.7 261.5 L452.0 262.0 L460.3 261.5 L468.5 260.2 L476.3 258.0 L483.7 255.0 L490.5 251.3 L496.6 247.0 L502.0 242.3 L506.4 237.2 L510.0 232.0 L512.7 226.8 L514.4 221.7 L515.3 217.0 L515.4 212.7 L514.8 209.0 L513.7 206.0 L512.0 203.8 L510.1 202.5 L508.0 202.0 L505.9 202.5 L504.0 203.8 L502.3 206.0 L501.2 209.0 L500.6 212.7 L500.7 217.0 L501.6 221.7 L503.3 226.8 L506.0 232.0 L509.6 237.2 L514.0 242.3 L519.4 247.0 L525.5 251.3 L532.3 255.0 L539.7 258.0 L547.5 260.2 L555.7 261.5 L564.0 262.0 L572.3 261.5 L580.5 260.2 L588.3 258.0 L595.7 255.0 L602.5 251.3 L608.6 247.0 L614.0 242.3 L618.4 237.2 L622.0 232.0 L624.7 226.8 L626.4 221.7 L627.3 217.0 L627.4 212.7 L626.8 209.0 L625.7 206.0 L624.0 203.8 L622.1 202.5 L620.0 202.0 L617.9 202.5 L616.0 203.8 L614.3 206.0 L613.2 209.0 L612.6 212.7 L612.7 217.0 L613.6 221.7 L615.3 226.8 L618.0 232.0 L621.6 237.2 L626.0 242.3 L631.4 247.0 L637.5 251.3 L644.3 255.0 L651.7 258.0 L659.5 260.2 L667.7 261.5 L676.0 262.0 C 706 262 730 236 760 236"/>
+        <circle class="r-start" cx="60" cy="160" r="9"/>
+        <text class="r-lbl r-lbl-start" x="40" y="128">La duda</text>
+        <circle class="r-end r-end-rust" cx="760" cy="64" r="7"/>
+        <circle class="r-end r-end-teal" cx="760" cy="236" r="7"/>
+        <text class="r-lbl r-lbl-rust" x="784" y="60">Respuesta correcta</text>
+        <text class="r-sub r-sub-rust" x="784" y="84">ilusión de aprendizaje</text>
+        <text class="r-lbl r-lbl-teal" x="784" y="232">Razonamiento analítico</text>
+        <text class="r-sub r-sub-teal" x="784" y="256">aprendizaje duradero</text>
+        <text class="r-tag r-tag-rust" x="330" y="96" transform="rotate(-7.8 330 96)">RENDICIÓN COGNITIVA · AL PRIMER OBSTÁCULO</text>
+        <text class="r-tag r-tag-teal" x="300" y="296">ESFUERZO PRODUCTIVO · PRUEBA Y ERROR</text>
+      </svg>
+      <svg class="routes routes-v is-drawing" viewBox="0 0 360 540" role="img" aria-labelledby="routes-v-t routes-v-d">
+        <title id="routes-v-t">Dos caminos desde la misma duda</title>
+        <desc id="routes-v-d">Desde la duda salen dos trayectos. La rendición cognitiva es una línea recta y corta que llega de inmediato a una respuesta correcta, con ilusión de aprendizaje. El esfuerzo productivo es una línea con muchos bucles de prueba y error que llega al razonamiento analítico, condición del aprendizaje duradero.</desc>
+        <path class="r-rust" pathLength="1" d="M180 52 L84 440"/>
+        <path class="r-teal" pathLength="1" d="M180 52 C 180 74 262 70 262 100 L261.6 106.3 L260.6 112.4 L258.8 118.3 L256.4 123.8 L253.4 128.8 L250.0 133.3 L246.2 137.1 L242.2 140.3 L238.0 142.8 L233.8 144.5 L229.8 145.5 L226.0 145.8 L222.6 145.5 L219.6 144.6 L217.2 143.3 L215.4 141.5 L214.4 139.6 L214.0 137.5 L214.4 135.4 L215.4 133.5 L217.2 131.8 L219.6 130.4 L222.6 129.5 L226.0 129.2 L229.8 129.5 L233.8 130.5 L238.0 132.3 L242.2 134.7 L246.2 137.9 L250.0 141.7 L253.4 146.2 L256.4 151.2 L258.8 156.7 L260.6 162.6 L261.6 168.7 L262.0 175.0 L261.6 181.3 L260.6 187.4 L258.8 193.2 L256.4 198.8 L253.4 203.8 L250.0 208.3 L246.2 212.1 L242.2 215.3 L238.0 217.8 L233.8 219.5 L229.8 220.5 L226.0 220.8 L222.6 220.5 L219.6 219.6 L217.2 218.3 L215.4 216.5 L214.4 214.6 L214.0 212.5 L214.4 210.4 L215.4 208.5 L217.2 206.8 L219.6 205.4 L222.6 204.5 L226.0 204.2 L229.8 204.5 L233.8 205.5 L238.0 207.3 L242.2 209.7 L246.2 212.9 L250.0 216.7 L253.4 221.2 L256.4 226.2 L258.8 231.8 L260.6 237.6 L261.6 243.7 L262.0 250.0 L261.6 256.3 L260.6 262.4 L258.8 268.3 L256.4 273.8 L253.4 278.8 L250.0 283.3 L246.2 287.1 L242.2 290.3 L238.0 292.8 L233.8 294.5 L229.8 295.5 L226.0 295.8 L222.6 295.5 L219.6 294.6 L217.2 293.3 L215.4 291.5 L214.4 289.6 L214.0 287.5 L214.4 285.4 L215.4 283.5 L217.2 281.8 L219.6 280.4 L222.6 279.5 L226.0 279.2 L229.8 279.5 L233.8 280.5 L238.0 282.3 L242.2 284.7 L246.2 287.9 L250.0 291.7 L253.4 296.2 L256.4 301.2 L258.8 306.8 L260.6 312.6 L261.6 318.7 L262.0 325.0 L261.6 331.3 L260.6 337.4 L258.8 343.2 L256.4 348.8 L253.4 353.8 L250.0 358.3 L246.2 362.1 L242.2 365.3 L238.0 367.8 L233.8 369.5 L229.8 370.5 L226.0 370.8 L222.6 370.5 L219.6 369.6 L217.2 368.3 L215.4 366.5 L214.4 364.6 L214.0 362.5 L214.4 360.4 L215.4 358.5 L217.2 356.8 L219.6 355.4 L222.6 354.5 L226.0 354.2 L229.8 354.5 L233.8 355.5 L238.0 357.2 L242.2 359.7 L246.2 362.9 L250.0 366.7 L253.4 371.2 L256.4 376.2 L258.8 381.8 L260.6 387.6 L261.6 393.7 L262.0 400.0 C 262 420 262 430 262 440"/>
+        <circle class="r-start" cx="180" cy="52" r="8"/>
+        <text class="r-lbl" x="180" y="28" text-anchor="middle">La duda</text>
+        <circle class="r-end r-end-rust" cx="84" cy="440" r="6"/>
+        <circle class="r-end r-end-teal" cx="262" cy="440" r="6"/>
+        <text class="r-lbl r-lbl-rust" x="84" y="472" text-anchor="middle">Respuesta</text>
+        <text class="r-lbl r-lbl-rust" x="84" y="494" text-anchor="middle">correcta</text>
+        <text class="r-sub r-sub-rust" x="84" y="520" text-anchor="middle">ilusión de aprendizaje</text>
+        <text class="r-lbl r-lbl-teal" x="262" y="472" text-anchor="middle">Razonamiento</text>
+        <text class="r-lbl r-lbl-teal" x="262" y="494" text-anchor="middle">analítico</text>
+        <text class="r-sub r-sub-teal" x="262" y="520" text-anchor="middle">aprendizaje duradero</text>
+        <text class="r-tag r-tag-rust" x="118" y="250" transform="rotate(-76 118 250)">RENDICIÓN COGNITIVA</text>
+        <text class="r-tag r-tag-teal" x="306" y="168" transform="rotate(90 306 168)">ESFUERZO PRODUCTIVO</text>
+      </svg>
+      <figcaption>
+        <span class="key key-rust">El atajo llega primero</span>
+        <span class="key key-teal">El rodeo es el aprendizaje</span>
+        <button type="button" class="replay" id="replay" aria-label="Volver a trazar los dos caminos">Repetir trazo</button>
+      </figcaption>
+    </figure>
+
+    <a class="scroll-cue" href="#funcionamiento">Empezar el recorrido <span aria-hidden="true">↓</span></a>
+  </div>
+</section>
+
+<!-- ═══════════════════════ 01 FUNCIONAMIENTO ═══════════════════════ -->
+<section class="chapter" id="funcionamiento" aria-labelledby="h-01">
+  <div class="grid">
+    <header class="ch-head" data-reveal>
+      <p class="ch-n">01</p>
+      <h2 id="h-01">Qué hay detrás del chat</h2>
+      <p class="ch-lede">Un chatbot educativo es un gran modelo de lenguaje (LLM): una red neuronal que genera texto de forma probabilística. Recorre su fabricación paso a paso.</p>
+    </header>
+
+    <div class="pipeline" data-tabs data-reveal>
+      <div class="pipe-steps" role="tablist" aria-label="Etapas de un chatbot generativo">
+        <button type="button" role="tab" id="pipe-t1" aria-controls="pipe-p1" aria-selected="true" class="pipe-step">
+          <span class="pipe-k">Etapa 1</span><span class="pipe-t">Corpus masivos</span>
+        </button>
+        <button type="button" role="tab" id="pipe-t2" aria-controls="pipe-p2" aria-selected="false" tabindex="-1" class="pipe-step">
+          <span class="pipe-k">Etapa 2</span><span class="pipe-t">Preentrenamiento</span>
+        </button>
+        <button type="button" role="tab" id="pipe-t3" aria-controls="pipe-p3" aria-selected="false" tabindex="-1" class="pipe-step">
+          <span class="pipe-k">Etapa 3</span><span class="pipe-t">Ajuste con RLHF</span>
+        </button>
+        <button type="button" role="tab" id="pipe-t4" aria-controls="pipe-p4" aria-selected="false" tabindex="-1" class="pipe-step">
+          <span class="pipe-k">Etapa 4</span><span class="pipe-t">Tutor de diálogo</span>
+        </button>
+      </div>
+      <p class="pipe-loop" aria-hidden="true"><span>Las interacciones de millones de usuarios realimentan el ajuste</span></p>
+
+      <div class="pipe-panels">
+        <div class="pipe-panel" role="tabpanel" id="pipe-p1" aria-labelledby="pipe-t1" tabindex="0">
+          <h3>Libros, artículos, código y páginas web</h3>
+          <p>El modelo se preentrena con corpus masivos de texto. Esos corpus no son un reflejo neutral del mundo: aquí empieza el sesgo en los datos (capítulo 05).</p>
+          <p class="cite">Ouyang et al., 2022</p>
+        </div>
+        <div class="pipe-panel" role="tabpanel" id="pipe-p2" aria-labelledby="pipe-t2" tabindex="0" hidden>
+          <h3>Una red Transformer que predice texto</h3>
+          <p>Los LLM son redes neuronales de arquitectura Transformer que generan texto de forma probabilística. La misma maquinaria produce la respuesta y, si se le pide, su explicación (capítulo 06).</p>
+          <p class="cite">Vaswani et al., 2017</p>
+        </div>
+        <div class="pipe-panel" role="tabpanel" id="pipe-p3" aria-labelledby="pipe-t3" tabindex="0" hidden>
+          <h3>Alinearse con lo que el usuario espera</h3>
+          <p>Después se ajustan con aprendizaje por refuerzo a partir de retroalimentación humana (<i lang="en">reinforcement learning from human feedback</i>, RLHF). El modelo aprende a dar la respuesta que el usuario espera recibir.</p>
+          <p class="cite">Ouyang et al., 2022</p>
+        </div>
+        <div class="pipe-panel" role="tabpanel" id="pipe-p4" aria-labelledby="pipe-t4" tabindex="0" hidden>
+          <h3>Explica, resuelve, sugiere, corrige</h3>
+          <p>El estudiante escribe una duda en lenguaje natural y recibe explicaciones, soluciones paso a paso, sugerencias de fuentes o comentarios sobre su redacción. Los modelos frontera son además multimodales, y algunos conservan memoria de las conversaciones anteriores, como el Proyecto Astra de Google DeepMind.</p>
+          <p class="cite">Arsenault et al., 2026 · Google DeepMind, 2026</p>
+        </div>
+      </div>
+    </div>
+
+    <aside class="sources3" data-reveal aria-labelledby="h-datos">
+      <h3 id="h-datos" class="eyebrow">De dónde salen sus datos</h3>
+      <ol>
+        <li><span class="s3-n">1</span><p><strong>Los corpus de entrenamiento</strong> con que se preentrena el modelo.</p></li>
+        <li><span class="s3-n">2</span><p><strong>Las interacciones de millones de usuarios</strong>, que realimentan el ajuste.</p></li>
+        <li><span class="s3-n">3</span><p><strong>En el aula:</strong> mensajes e historiales de tareas en plataformas con el asistente integrado, como Google Classroom.</p></li>
+      </ol>
+      <p class="cite">Arsenault et al., 2026</p>
+    </aside>
+  </div>
+</section>
+
+<!-- ═══════════════════════ 02 CONCEPTO ═══════════════════════ -->
+<section class="chapter theme-paper2" id="concepto" aria-labelledby="h-02">
+  <div class="grid">
+    <header class="ch-head" data-reveal>
+      <p class="ch-n">02</p>
+      <h2 id="h-02">Dos posturas ante la misma duda</h2>
+      <p class="ch-lede">El informe del MIT nombra lo que pasa cuando el atajo se vuelve hábito. Cambia de postura para comparar el trayecto y lo que deja.</p>
+    </header>
+
+    <div class="concept" data-tabs data-reveal>
+      <div class="seg" role="tablist" aria-label="Postura frente a la duda">
+        <button type="button" role="tab" id="cx-t1" aria-controls="cx-p1" aria-selected="true" class="seg-btn seg-rust">Rendición cognitiva</button>
+        <button type="button" role="tab" id="cx-t2" aria-controls="cx-p2" aria-selected="false" tabindex="-1" class="seg-btn seg-teal">Esfuerzo productivo</button>
+      </div>
+
+      <div class="cx-panel cx-rust" role="tabpanel" id="cx-p1" aria-labelledby="cx-t1">
+        <div class="cx-def">
+          <p class="eyebrow"><i lang="en">Cognitive surrender</i></p>
+          <p class="cx-big">Recurrir a la IA al primer indicio de dificultad.</p>
+          <p class="cite">MIT, 2026</p>
+        </div>
+        <ol class="track" aria-label="Trayecto de la rendición cognitiva">
+          <li>Duda</li>
+          <li class="is-bot">Chatbot</li>
+          <li class="is-end">Respuesta correcta</li>
+        </ol>
+        <div class="cx-cost">
+          <p class="eyebrow">Lo que la dependencia excesiva puede costar</p>
+          <ul class="costs">
+            <li>Reducir el pensamiento crítico</li>
+            <li>Debilitar la memoria</li>
+            <li>Erosionar la confianza</li>
+            <li>Mermar el dominio de la materia</li>
+          </ul>
+          <p class="cite">MIT, 2026 (traducción propia)</p>
+        </div>
+      </div>
+
+      <div class="cx-panel cx-teal" role="tabpanel" id="cx-p2" aria-labelledby="cx-t2" hidden>
+        <div class="cx-def">
+          <p class="eyebrow"><i lang="en">Productive struggle</i></p>
+          <p class="cx-big">«El proceso de prueba y error fundamental para llegar hasta el razonamiento analítico».</p>
+          <p class="cite">«El peligro de la “rendición cognitiva”», 2026</p>
+        </div>
+        <ol class="track" aria-label="Trayecto del esfuerzo productivo">
+          <li>Duda</li>
+          <li>Intento</li>
+          <li class="is-err">Error</li>
+          <li>Intento</li>
+          <li class="is-end">Razonamiento analítico</li>
+        </ol>
+        <div class="cx-cost">
+          <p class="eyebrow">Lo que sostiene</p>
+          <ul class="costs">
+            <li>Es condición del aprendizaje duradero</li>
+            <li>Es justo lo que elimina un asistente optimizado para no frustrar</li>
+          </ul>
+          <p class="cite">MIT, 2026</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ 03 LA DUDA ═══════════════════════ -->
+<section class="chapter theme-night" id="duda" aria-labelledby="h-03">
+  <div class="grid">
+    <header class="ch-head" data-reveal>
+      <p class="ch-n">03</p>
+      <h2 id="h-03">¿Qué haces tú con la duda?</h2>
+      <p class="ch-lede">Una situación cotidiana. Elige y mira qué ganas y qué pierdes según el mecanismo que describe el informe.</p>
+    </header>
+
+    <div class="sim" data-reveal>
+      <div class="sim-scene">
+        <p class="eyebrow">Escenario</p>
+        <p class="sim-q">Repasas para un parcial. Un ejercicio se te atasca a los cinco minutos.</p>
+      </div>
+      <div class="sim-choices" id="sim-choices" role="group" aria-label="Elige qué haces">
+        <button type="button" class="choice choice-teal" data-path="esfuerzo">
+          <span class="choice-k">A</span>Sigo intentándolo y luego contrasto
+        </button>
+        <button type="button" class="choice choice-rust" data-path="rendicion">
+          <span class="choice-k">B</span>Le pido la solución completa al chatbot
+        </button>
+      </div>
+
+      <div class="sim-result" id="sim-result" hidden>
+        <h3 class="sim-title" id="sim-title" tabindex="-1"></h3>
+        <div class="ledger">
+          <div class="ledger-col">
+            <p class="eyebrow">Ganas</p>
+            <ul id="sim-gain"></ul>
+          </div>
+          <div class="ledger-col">
+            <p class="eyebrow">Pierdes</p>
+            <ul id="sim-loss"></ul>
+          </div>
+        </div>
+        <p class="sim-note" id="sim-note"></p>
+        <div class="sim-actions">
+          <button type="button" class="btn" id="sim-other">Ver el otro camino</button>
+          <button type="button" class="btn btn-quiet" id="sim-reset">Volver a elegir</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ 04 EVIDENCIA ═══════════════════════ -->
+<section class="chapter" id="evidencia" aria-labelledby="h-04">
+  <div class="grid">
+    <header class="ch-head" data-reveal>
+      <p class="ch-n">04</p>
+      <h2 id="h-04">Tres señales</h2>
+      <p class="ch-lede">La calificación sube, el examen baja, el recuerdo se borra y el campus se vacía. Cada señal tiene su fuente: actívala para verla.</p>
+    </header>
+
+    <article class="ev ev-main" data-reveal aria-labelledby="ev1-h">
+      <div class="ev-text">
+        <p class="eyebrow">Señal 1 · 26&nbsp;000 estudiantes de secundaria en China</p>
+        <h3 id="ev1-h">Mejores tareas, peores exámenes</h3>
+        <p>Con la IA, las calificaciones de las tareas subieron un 18&nbsp;%. Los resultados en exámenes presenciales cayeron un 20&nbsp;%.</p>
+        <button type="button" class="src-btn" aria-expanded="false" aria-controls="src-1">Fuente</button>
+        <p class="src" id="src-1" hidden>Estudio citado por Arsenault, Goldstein, Blinder y Mervosh (2026), <i>Infobae</i> / <i>The New York Times</i>.</p>
+      </div>
+      <figure class="bars" id="bars" aria-labelledby="bars-cap">
+        <div class="bars-scale" aria-hidden="true"><span>−20&nbsp;%</span><span>0</span><span>+20&nbsp;%</span></div>
+        <div class="bar-row">
+          <p class="bar-lbl">Calificaciones de las tareas</p>
+          <div class="bar-track" aria-hidden="true"><span class="bar bar-up" style="--v:18"></span></div>
+          <p class="bar-val bar-val-up">+18&nbsp;%</p>
+        </div>
+        <div class="bar-row">
+          <p class="bar-lbl">Resultados en exámenes presenciales</p>
+          <div class="bar-track" aria-hidden="true"><span class="bar bar-down" style="--v:20"></span></div>
+          <p class="bar-val bar-val-down">−20&nbsp;%</p>
+        </div>
+        <figcaption id="bars-cap">Efecto de la IA en el mismo estudio. Lo que se ve en la tarea no es lo que queda en el examen.</figcaption>
+      </figure>
+    </article>
+
+    <div class="ev-pair">
+      <article class="ev" data-reveal aria-labelledby="ev2-h">
+        <p class="eyebrow">Señal 2 · Estudio con electroencefalografía en el MIT</p>
+        <h3 id="ev2-h">Escribirlo no es recordarlo</h3>
+        <div class="debt" role="group" aria-label="Secuencia del estudio">
+          <p class="debt-step"><span class="debt-k">Durante</span>Redactan con un chatbot</p>
+          <span class="debt-arrow" aria-hidden="true">→</span>
+          <p class="debt-step debt-late"><span class="debt-k">Minutos después</span>Apenas recuerdan lo escrito</p>
+        </div>
+        <p>Los autores llaman a esto <strong>deuda cognitiva</strong>: el costo diferido de externalizar el esfuerzo.</p>
+        <button type="button" class="src-btn" aria-expanded="false" aria-controls="src-2">Fuente</button>
+        <p class="src" id="src-2" hidden>Kosmyna et al. (2025), <i lang="en">Your brain on ChatGPT: Accumulation of cognitive debt when using an AI assistant for essay writing task</i>, arXiv.</p>
+      </article>
+
+      <article class="ev" data-reveal aria-labelledby="ev3-h">
+        <p class="eyebrow">Señal 3 · Informe del comité del MIT</p>
+        <h3 id="ev3-h">«Grandes cambios en la cultura del campus»</h3>
+        <ul class="campus">
+          <li>
+            <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="9" y="12" width="30" height="24" rx="2"/><path d="M15 20h18M15 26h10"/><path class="down" d="M40 30v12m-4-4 4 4 4-4"/></svg>
+            <span>Menos asistencia a las horas de consulta</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="14" cy="18" r="5"/><circle cx="30" cy="18" r="5"/><path d="M6 34c1-6 5-9 8-9s7 3 8 9M22 34c1-6 5-9 8-9s7 3 8 9"/><path class="down" d="M42 30v12m-4-4 4 4 4-4"/></svg>
+            <span>Menos grupos de estudio presenciales</span>
+          </li>
+        </ul>
+        <button type="button" class="src-btn" aria-expanded="false" aria-controls="src-3">Fuente</button>
+        <p class="src" id="src-3" hidden>Massachusetts Institute of Technology (2026), <i lang="en">Report of MIT’s Ad Hoc Committee on AI Use in Teaching, Learning, and Research Training</i> (traducción propia).</p>
+      </article>
+    </div>
+
+    <p class="caveat" data-reveal><strong>Con cautela.</strong> El propio informe habla de «señales tempranas», no de evidencia concluyente. El diagnóstico es serio, pero no es una sentencia.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════ 05 SESGOS ═══════════════════════ -->
+<section class="chapter theme-paper2" id="sesgos" aria-labelledby="h-05">
+  <div class="grid">
+    <header class="ch-head" data-reveal>
+      <p class="ch-n">05</p>
+      <h2 id="h-05">El sesgo entra en tres niveles</h2>
+      <p class="ch-lede">No es solo un problema de «datos malos». Se acumula en el corpus, en el diseño del producto y en quién termina pagando el costo. Elige un nivel.</p>
+    </header>
+
+    <div class="bias" data-tabs data-reveal>
+      <div class="bias-stack" role="tablist" aria-label="Niveles de sesgo">
+        <button type="button" role="tab" id="bias-t1" aria-controls="bias-p1" aria-selected="true" class="slab">
+          <span class="slab-n">1</span><span class="slab-t">Datos</span><span class="slab-s">el corpus</span>
+        </button>
+        <button type="button" role="tab" id="bias-t2" aria-controls="bias-p2" aria-selected="false" tabindex="-1" class="slab">
+          <span class="slab-n">2</span><span class="slab-t">Diseño</span><span class="slab-s">el producto</span>
+        </button>
+        <button type="button" role="tab" id="bias-t3" aria-controls="bias-p3" aria-selected="false" tabindex="-1" class="slab">
+          <span class="slab-n">3</span><span class="slab-t">Interacción</span><span class="slab-s">las personas</span>
+        </button>
+      </div>
+
+      <div class="bias-panels">
+        <div class="bias-panel" role="tabpanel" id="bias-p1" aria-labelledby="bias-t1" tabindex="0">
+          <p class="stat"><span class="stat-n">825&nbsp;GiB</span><span class="stat-l">de texto en inglés reúne The Pile, uno de los corpus abiertos de referencia.</span></p>
+          <p>Los corpus no son un reflejo neutral del mundo: buena parte del material se concentra en una lengua y en las perspectivas que esta vehicula. El comité del MIT admite que la procedencia de los datos, el sesgo potencial y la homogeneización de las respuestas siguen sin resolverse.</p>
+          <p class="cite">Gao et al., 2021 · MIT, 2026</p>
+        </div>
+        <div class="bias-panel" role="tabpanel" id="bias-p2" aria-labelledby="bias-t2" tabindex="0" hidden>
+          <div class="tension" aria-label="Dos objetivos opuestos">
+            <p class="tension-a"><span class="eyebrow">El producto busca</span>Ser útil y no frustrar: la respuesta completa al primer intento</p>
+            <p class="tension-vs" aria-hidden="true">≠</p>
+            <p class="tension-b"><span class="eyebrow">El aprendizaje necesita</span>Esfuerzo productivo: prueba, error y fricción</p>
+          </div>
+          <p>El asistente está optimizado para ser útil y no frustrar. Esa lógica es opuesta al esfuerzo productivo que el MIT considera condición del aprendizaje duradero.</p>
+          <p class="cite">MIT, 2026</p>
+        </div>
+        <div class="bias-panel" role="tabpanel" id="bias-p3" aria-labelledby="bias-t3" tabindex="0" hidden>
+          <p class="eyebrow">El daño no se reparte por igual. Afecta más a:</p>
+          <ul class="who">
+            <li>Estudiantes de primer año, que aún construyen habilidades y juicio</li>
+            <li>Quienes sufren ansiedad académica y recurren al chatbot por miedo al error</li>
+            <li>Instituciones con menos recursos, donde el modelo puede sustituir la tutoría humana</li>
+            <li>Estudiantes no nativos del inglés y neurodivergentes, cuya escritura los detectores de IA pueden confundir con texto de máquina</li>
+          </ul>
+          <p>La herramienta que promete democratizar el conocimiento puede concentrar sus costos en los más vulnerables.</p>
+          <p class="cite">MIT, 2026</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ 06 OPACIDAD ═══════════════════════ -->
+<section class="chapter theme-night" id="opacidad" aria-labelledby="h-06">
+  <div class="grid">
+    <header class="ch-head" data-reveal>
+      <p class="ch-n">06</p>
+      <h2 id="h-06">La caja negra</h2>
+      <p class="ch-lede">Entra una pregunta y sale una respuesta. Lo que ocurre en medio no se puede auditar. Abre cada pregunta sin respuesta.</p>
+    </header>
+
+    <div class="box" data-tabs data-reveal>
+      <figure class="box-fig">
+        <svg class="blackbox" viewBox="0 0 440 340" role="img" aria-labelledby="bb-t bb-d">
+          <title id="bb-t">Diagrama de la caja negra</title>
+          <desc id="bb-d">Una pregunta entra a una caja opaca y sale una respuesta. Tres preguntas quedan dentro de la caja sin respuesta: qué fuentes priorizó, con qué confianza responde y por qué eligió esa respuesta. Si se le pide una explicación, sale de la misma caja, generada con la misma maquinaria.</desc>
+          <defs>
+            <marker id="bb-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 1 L9 5 L0 9 Z" class="bb-arrowhead"/></marker>
+            <pattern id="bb-hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" class="bb-hatch"/></pattern>
+          </defs>
+          <text class="bb-io" x="40" y="44">PREGUNTA</text>
+          <path class="bb-flow" d="M70 54 V 92" marker-end="url(#bb-arrow)"/>
+          <rect class="bb-box" x="40" y="100" width="300" height="150" rx="4"/>
+          <rect x="40" y="100" width="300" height="150" rx="4" fill="url(#bb-hatch)"/>
+          <g class="bb-spot" data-spot="1"><circle cx="110" cy="160" r="20"/><text x="110" y="166">1</text></g>
+          <g class="bb-spot" data-spot="2"><circle cx="190" cy="196" r="20"/><text x="190" y="202">2</text></g>
+          <g class="bb-spot" data-spot="3"><circle cx="270" cy="156" r="20"/><text x="270" y="162">3</text></g>
+          <path class="bb-flow" d="M70 250 V 290" marker-end="url(#bb-arrow)"/>
+          <text class="bb-io bb-out" x="40" y="318">RESPUESTA</text>
+          <path class="bb-loop" d="M340 220 C 400 220 410 300 330 306 L 276 306" marker-end="url(#bb-arrow)"/>
+          <text class="bb-note" x="350" y="120">¿Y si le</text>
+          <text class="bb-note" x="350" y="138">pido que</text>
+          <text class="bb-note" x="350" y="156">se explique?</text>
+          <text class="bb-io bb-expl" x="146" y="318">EXPLICACIÓN</text>
+        </svg>
+      </figure>
+
+      <div class="box-side">
+        <div class="qs" role="tablist" aria-label="Preguntas sin respuesta" aria-orientation="vertical">
+          <button type="button" role="tab" id="bb-t1" aria-controls="bb-p1" aria-selected="true" class="q" data-spot="1"><span class="q-n">1</span>¿Qué fuentes priorizó?</button>
+          <button type="button" role="tab" id="bb-t2" aria-controls="bb-p2" aria-selected="false" tabindex="-1" class="q" data-spot="2"><span class="q-n">2</span>¿Con qué confianza responde?</button>
+          <button type="button" role="tab" id="bb-t3" aria-controls="bb-p3" aria-selected="false" tabindex="-1" class="q" data-spot="3"><span class="q-n">3</span>¿Por qué eligió esa respuesta?</button>
+        </div>
+        <div class="q-panel" role="tabpanel" id="bb-p1" aria-labelledby="bb-t1" tabindex="0">
+          <p>El usuario no lo sabe. La respuesta llega sin rastro de qué textos pesaron más.</p>
+        </div>
+        <div class="q-panel" role="tabpanel" id="bb-p2" aria-labelledby="bb-t2" tabindex="0" hidden>
+          <p>Tampoco se ve. El modelo genera texto de forma probabilística, pero no muestra con qué confianza sostiene lo que dice.</p>
+        </div>
+        <div class="q-panel" role="tabpanel" id="bb-p3" aria-labelledby="bb-t3" tabindex="0" hidden>
+          <p>Si se lo preguntas, la explicación que ofrece a posteriori no es una trazabilidad real: es texto generado con la misma maquinaria probabilística.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-impl" data-reveal>
+      <p class="eyebrow">Qué implica en el aula</p>
+      <p class="box-impl-t">Si no es posible reconstruir cómo se llegó a una respuesta, el docente no puede evaluar ni auditar el proceso de aprendizaje. Por eso el MIT propone un enfoque <strong>consciente de la IA</strong> (<i lang="en">AI-aware</i>): rediseñar las evaluaciones para fomentar el esfuerzo productivo en lugar de limitarse a prohibir.</p>
+      <p class="cite">MIT, 2026</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ 07 ÉTICA ═══════════════════════ -->
+<section class="chapter" id="etica" aria-labelledby="h-07">
+  <div class="grid">
+    <header class="ch-head" data-reveal>
+      <p class="ch-n">07</p>
+      <h2 id="h-07">Tres dilemas</h2>
+      <p class="ch-lede">El uso extendido de chatbots no es solo una cuestión de rendimiento. Toca qué persona forma la universidad, quién accede a qué y para qué sirve estudiar.</p>
+    </header>
+
+    <ol class="dilemmas">
+      <li data-reveal>
+        <p class="dl-k">Autonomía</p>
+        <p class="dl-q">¿Formamos graduados que saben usar la IA o que dependen de ella?</p>
+        <p>La dependencia excesiva puede reducir el pensamiento crítico y mermar el dominio de la materia.</p>
+        <p class="cite">MIT, 2026</p>
+      </li>
+      <li data-reveal>
+        <p class="dl-k">Equidad</p>
+        <p class="dl-q">Quien puede pagar accede a un tutor mejor.</p>
+        <p>Los modelos más capaces requieren suscripciones de pago: Opus no está en el plan gratuito de Claude.</p>
+        <p class="cite">Anthropic, 2026</p>
+      </li>
+      <li data-reveal>
+        <p class="dl-k">Sentido de la universidad</p>
+        <p class="dl-q">«Se condenarán a la irrelevancia».</p>
+        <p>Así describe la presidenta de Dartmouth a las instituciones que no formen graduados capaces de usar la IA.</p>
+        <p class="cite">Arsenault et al., 2026</p>
+      </li>
+    </ol>
+
+    <aside class="frontier" data-reveal>
+      <p class="eyebrow">Frente a los modelos frontera</p>
+      <p class="frontier-t">Los asistentes con memoria, como el Proyecto Astra, personalizan sus respuestas. Cuanto mejor se adapta el modelo, <strong>más difícil es detectar la ilusión de aprendizaje</strong>.</p>
+      <p class="cite">Google DeepMind, 2026</p>
+    </aside>
+  </div>
+</section>
+
+<!-- ═══════════════════════ 08 CRITERIO ═══════════════════════ -->
+<section class="chapter theme-paper2 closing" id="criterio" aria-labelledby="h-08">
+  <div class="grid">
+    <header class="ch-head" data-reveal>
+      <p class="ch-n">08</p>
+      <h2 id="h-08">La rendición no es un destino</h2>
+      <p class="ch-lede">Depende de cómo se integra la herramienta y, sobre todo, del criterio de quien la usa. La autorregulación, cuya ausencia es factor de riesgo, es también el principal factor de protección.</p>
+    </header>
+
+    <figure class="pull" data-reveal>
+      <blockquote>
+        <p>La herramienta orienta, y elegir sigue siendo un privilegio que no delego.</p>
+      </blockquote>
+      <figcaption>Lina Paola Solórzano Prieto, arquitecta y madre, sobre su uso cotidiano de la IA</figcaption>
+    </figure>
+
+    <div class="contrast" data-reveal>
+      <p class="eyebrow">Una respuesta a la opacidad</p>
+      <p>Si no puedo auditar cómo razona un modelo, puedo <strong>confrontarlo con otros y con mi propio juicio</strong>: comparar las respuestas de varios modelos y decidir qué aprendizaje adopto.</p>
+    </div>
+
+    <h3 class="recs-h" data-reveal>Tres recomendaciones</h3>
+    <ol class="recs">
+      <li data-reveal>
+        <span class="rec-n">1</span>
+        <h4>Evaluaciones conscientes de la IA</h4>
+        <p>Que midan el proceso y no solo el producto.</p>
+      </li>
+      <li data-reveal>
+        <span class="rec-n">2</span>
+        <h4>Espacios de aprendizaje social sin IA</h4>
+        <p>Como los <i lang="en">Tech Free Times</i> que propone el MIT.</p>
+      </li>
+      <li data-reveal>
+        <span class="rec-n">3</span>
+        <h4>Alfabetización crítica</h4>
+        <p>Enseñar a contrastar, a decidir qué delegar y a no creer todo lo que dice un modelo.</p>
+      </li>
+    </ol>
+
+    <p class="final" data-reveal>El riesgo no está en la IA, sino en la <em>renuncia al juicio propio</em>.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot theme-night">
+  <div class="grid">
+    <div class="foot-about">
+      <p class="foot-brand">Lina Paola Solórzano Prieto</p>
+      <p>Universidad de Bogotá Jorge Tadeo Lozano · Ética e innovación en la era digital</p>
+      <p>Síntesis visual de la revisión crítica <i>Chatbots generativos en la educación universitaria: la rendición cognitiva frente a los modelos frontera</i> (2026).</p>
+    </div>
+    <div class="foot-refs">
+      <h2 class="eyebrow">Referencias</h2>
+      <ol class="refs">
+        <li>Anthropic. (2026). <i>Pricing</i>. <a href="https://claude.com/pricing">claude.com/pricing</a></li>
+        <li>Arsenault, M., Goldstein, D., Blinder, A. y Mervosh, S. (2026, 15 de septiembre). Un informe advierte que la IA está provocando una “rendición cognitiva”: las universidades se encuentran en una encrucijada. <i>Infobae</i>. <a href="https://www.infobae.com/america/the-new-york-times/2026/09/15/un-informe-advierte-que-la-ia-esta-provocando-una-rendicion-cognitiva-las-universidades-se-encuentran-en-una-encrucijada/">infobae.com</a></li>
+        <li>El peligro de la «rendición cognitiva»: un informe del MIT alerta de cómo la IA está destruyendo el pensamiento crítico de los estudiantes. (2026, 23 de septiembre). <i>ABC</i>. <a href="https://www.abc.es/tecnologia/peligro-rendicion-cognitiva-informe-mit-alerta-ia-20260923053000-nt.html">abc.es</a></li>
+        <li>Gao, L. et al. (2021). <i>The Pile: An 825 GiB English text corpus for training large-scale language models</i>. arXiv. <a href="https://arxiv.org/abs/2101.00027">arxiv.org/abs/2101.00027</a></li>
+        <li>Google DeepMind. (2026). <i>Project Astra</i>. <a href="https://deepmind.google/technologies/project-astra/">deepmind.google</a></li>
+        <li>Kosmyna, N. et al. (2025). <i>Your brain on ChatGPT: Accumulation of cognitive debt when using an AI assistant for essay writing task</i>. arXiv. <a href="https://arxiv.org/abs/2506.08872">arxiv.org/abs/2506.08872</a></li>
+        <li>Massachusetts Institute of Technology. (2026, 13 de agosto). <i>Report of MIT’s Ad Hoc Committee on AI Use in Teaching, Learning, and Research Training</i>. <a href="https://aiandeducation.mit.edu/report/">aiandeducation.mit.edu</a></li>
+        <li>Ouyang, L. et al. (2022). <i>Training language models to follow instructions with human feedback</i>. arXiv. <a href="https://arxiv.org/abs/2203.02155">arxiv.org/abs/2203.02155</a></li>
+        <li>Vaswani, A. et al. (2017). <i>Attention is all you need</i>. arXiv. <a href="https://arxiv.org/abs/1706.03762">arxiv.org/abs/1706.03762</a></li>
+      </ol>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
