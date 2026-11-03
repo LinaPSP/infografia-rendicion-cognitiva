@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Piensa primero · Rendición cognitiva</title>
+<meta name="description" content="Una experiencia de cuatro minutos para notar qué haces con tu propio criterio cuando una respuesta ya viene hecha. Sin nota, sin registro: nada se guarda ni se envía.">
+<meta name="theme-color" content="#14130f">
+<meta property="og:title" content="Piensa primero">
+<meta property="og:description" content="Cuatro minutos para notar qué haces con tu criterio cuando la respuesta ya viene hecha.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%2314130f'/%3E%3Cpath d='M7 22 L25 9' stroke='%23ee8a62' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="piensa.css">
+</head>
+<body class="px">
+
+<header class="px-top">
+  <a class="px-back" href="index.html">← Infografía</a>
+  <p class="px-steps" id="px-steps" aria-live="polite">Inicio</p>
+</header>
+
+<main class="px-main" id="main">
+
+  <!-- 0 · Inicio -->
+  <section class="px-step" data-step="0" data-label="Inicio">
+    <p class="eyebrow">Experiencia · 4 minutos</p>
+    <h1>Piensa primero</h1>
+    <p class="px-lead">Esto no es un examen ni un test de IA. Es un espejo corto: vas a hacer tres cosas pequeñas y, al final, mirar qué hiciste con tu propio criterio.</p>
+    <ul class="px-promises">
+      <li>No hay nota ni respuestas correctas.</li>
+      <li>Nada se guarda ni se envía: lo que escribes se queda en esta pestaña.</li>
+      <li>Si recargas la página, empieza de cero.</li>
+    </ul>
+    <button class="px-btn" data-go="1">Empezar</button>
+  </section>
+
+  <!-- 1 · Adivina -->
+  <section class="px-step" data-step="1" data-label="1 de 4 · Adivina" hidden>
+    <p class="eyebrow">1 de 4 · Adivina antes de ver</p>
+    <h2>¿Qué pasa cuando practicas con un chatbot sin límites?</h2>
+    <p>Un estudio con cerca de mil estudiantes de secundaria en matemáticas les dio un chatbot para practicar. Después, hicieron un examen <strong>sin IA</strong>.</p>
+    <p>Comparados con quienes practicaron sin chatbot, ¿cuánto crees que cambió su resultado en el examen?</p>
+
+    <div class="px-slider">
+      <label for="guess" class="visually-hidden">Tu estimación del cambio en el examen, en porcentaje</label>
+      <input type="range" id="guess" min="-50" max="50" step="1" value="0">
+      <div class="px-scale" aria-hidden="true"><span>−50 %</span><span>igual</span><span>+50 %</span></div>
+      <p class="px-readout">Tu estimación: <output id="guess-out" for="guess">0 %</output></p>
+    </div>
+
+    <button class="px-btn" id="guess-btn">Fijar mi estimación y ver el dato</button>
+
+    <div class="px-reveal" id="guess-reveal" hidden>
+      <div class="px-compare2">
+        <p><span class="px-k">Tu estimación</span><span class="px-v" id="reveal-guess">0 %</span></p>
+        <p><span class="px-k">Dato real</span><span class="px-v px-rust">−17 %</span></p>
+      </div>
+      <p>Con el chatbot, en la práctica les fue mucho mejor (+48 %). En el examen sin IA, les fue <strong>17 % peor</strong> que a quienes nunca lo usaron. Una versión del chatbot que daba pistas en vez de respuestas casi eliminó ese daño.</p>
+      <p class="px-note">Bastani et al. (2025), <i>PNAS</i>. Un estudio, un contexto (secundaria, matemáticas): es un indicio, no una ley.</p>
+      <p class="px-q" id="guess-q"></p>
+      <button class="px-btn" data-go="2">Seguir</button>
+    </div>
+  </section>
+
+  <!-- 2 · Piensa primero -->
+  <section class="px-step" data-step="2" data-label="2 de 4 · Tu idea" hidden>
+    <p class="eyebrow">2 de 4 · Tu idea primero</p>
+    <h2>Una universidad duda si permitir IA en los exámenes de un curso.</h2>
+    <p><strong>¿Con qué criterio decidirías tú?</strong> Escribe tu idea, aunque sea corta o a medias. Todavía no verás ninguna respuesta de chatbot.</p>
+    <label for="mine" class="visually-hidden">Tu criterio</label>
+    <textarea id="mine" rows="5" placeholder="Yo decidiría según…"></textarea>
+    <button class="px-btn" id="mine-btn" disabled>Ya la escribí, ver la respuesta del chatbot</button>
+  </section>
+
+  <!-- 3 · Respuesta del chatbot -->
+  <section class="px-step" data-step="3" data-label="3 de 4 · Su respuesta" hidden>
+    <p class="eyebrow">3 de 4 · La respuesta ya viene hecha</p>
+    <h2>Esto responde un chatbot.</h2>
+    <p>Lee cada frase y marca qué harías con ella. Puedes quedarte con todas.</p>
+
+    <ol class="px-claims" id="claims"></ol>
+
+    <button class="px-btn" id="claims-btn" disabled>Listo, comparar</button>
+    <p class="px-note" id="claims-hint">Marca las cuatro frases para continuar.</p>
+  </section>
+
+  <!-- 4 · Comparar y recordar -->
+  <section class="px-step" data-step="4" data-label="4 de 4 · Lo que queda" hidden>
+    <p class="eyebrow">4 de 4 · Lo que queda</p>
+    <h2>Tu idea y la respuesta, lado a lado.</h2>
+
+    <div class="px-sbs" id="sbs">
+      <div>
+        <h3>Tu idea</h3>
+        <p id="sbs-mine" class="px-quote"></p>
+      </div>
+      <div>
+        <h3>El chatbot</h3>
+        <p id="sbs-bot" class="px-quote"></p>
+      </div>
+    </div>
+
+    <div id="trace" class="px-trace"></div>
+
+    <button class="px-btn px-btn-quiet" id="cover-btn">Tapar todo y explicarlo con mis palabras</button>
+
+    <div class="px-recall" id="recall" hidden>
+      <p><strong>Sin volver a mirar:</strong> ¿cómo decidirías, y por qué? Explícalo como si se lo contaras a un compañero.</p>
+      <label for="recall-text" class="visually-hidden">Tu explicación sin mirar</label>
+      <textarea id="recall-text" rows="4"></textarea>
+      <p class="px-q">De lo que acabas de escribir, ¿qué tan tuyo fue?</p>
+      <div class="px-radios" role="radiogroup" aria-label="Qué tan tuyo fue lo que escribiste">
+        <label><input type="radio" name="origin" value="casi todo mío"> Casi todo mío</label>
+        <label><input type="radio" name="origin" value="una mezcla"> Una mezcla</label>
+        <label><input type="radio" name="origin" value="casi todo del chatbot"> Casi todo del chatbot</label>
+      </div>
+      <button class="px-btn" id="recall-btn" disabled>Terminar</button>
+    </div>
+  </section>
+
+  <!-- 5 · Cierre -->
+  <section class="px-step" data-step="5" data-label="Cierre" hidden>
+    <p class="eyebrow">Cierre</p>
+    <h2>Lo que hiciste, sin juicio.</h2>
+    <ul class="px-summary" id="summary"></ul>
+    <p>Ninguna de estas respuestas dice si “lo hiciste bien”. Sirven para una sola pregunta, que es la del informe del MIT: <em>¿en qué momentos tu criterio se quedó en la mesa?</em></p>
+
+    <p class="px-q">Para llevar a la clase</p>
+    <ul class="px-take">
+      <li>¿Tu estimación inicial se pareció al dato? ¿Qué dice eso de lo que ya creías?</li>
+      <li>¿Cuánto cambió tu idea después de leer la del chatbot?</li>
+      <li>¿Habrías dudado de las frases si no te hubieran pedido marcarlas?</li>
+    </ul>
+
+    <div class="px-actions">
+      <button class="px-btn" id="copy-btn">Copiar mi recorrido</button>
+      <a class="px-btn px-btn-quiet" href="index.html#duda">Volver a la infografía</a>
+      <button class="px-btn px-btn-quiet" id="restart-btn">Empezar de nuevo</button>
+    </div>
+    <p class="px-note" id="copy-status" role="status"></p>
+  </section>
+
+</main>
+
+<footer class="px-foot">
+  <p>Pieza complementaria de la infografía <i>Rendición cognitiva</i>. No recopila datos: sin servidor, sin cookies, sin almacenamiento local.</p>
+  <p>Fuente del dato: Bastani, H. et al. (2025). Generative AI without guardrails can harm learning. <i>PNAS, 122</i>(26). <a href="https://doi.org/10.1073/pnas.2422633122" target="_blank" rel="noopener">doi.org/10.1073/pnas.2422633122</a></p>
+</footer>
+
+<script src="piensa.js" defer></script>
+</body>
+</html>
